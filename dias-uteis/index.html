@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calculadora de Dias Úteis 2026 – com Feriados Nacionais</title>
+<meta name="description" content="Conte os dias úteis entre duas datas descontando sábados, domingos e feriados nacionais. Veja quantos dias úteis tem cada mês de 2026 e a lista oficial de feriados.">
+<link rel="canonical" href="https://www.calculehoras.com/dias-uteis/">
+<link rel="alternate" hreflang="pt-BR" href="https://www.calculehoras.com/dias-uteis/">
+<link rel="alternate" hreflang="x-default" href="https://www.calculehoras.com/dias-uteis/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta property="og:type" content="website"><meta property="og:locale" content="pt_BR"><meta property="og:site_name" content="Calcule Horas">
+<meta property="og:title" content="Calculadora de Dias Úteis 2026 – com Feriados Nacionais"><meta property="og:description" content="Conte os dias úteis entre duas datas descontando sábados, domingos e feriados nacionais. Veja quantos dias úteis tem cada mês de 2026 e a lista oficial de feriados."><meta property="og:url" content="https://www.calculehoras.com/dias-uteis/"><meta property="og:image" content="https://www.calculehoras.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0F1B2D">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0F1B2D;--ink-2:#46546A;--line:#D8DEE8;--bg:#F1F4F9;--card:#FFFFFF;--pri:#1D4ED8;--pri-d:#1739A8;--sun:#F5B700;--sun-bg:#FFF7DB;--sun-line:#F0D27A;--r:12px;--max:1080px}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17px;line-height:1.62;color:var(--ink);background:var(--bg);font-variant-numeric:tabular-nums}
+a{color:var(--pri-d)}a:hover{color:var(--pri)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+header.top{background:var(--ink);color:#fff}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.15rem;color:#fff;text-decoration:none;letter-spacing:-.01em}
+.logo svg{width:30px;height:30px}
+nav.main{display:flex;gap:2px;flex-wrap:wrap}
+nav.main a{font-size:.85rem;padding:5px 8px;white-space:nowrap;border-radius:6px;text-decoration:none;color:#C9D3E3;font-weight:500}
+nav.main a:hover,nav.main a[aria-current]{background:rgba(255,255,255,.1);color:#fff}
+.menu-btn{display:none;background:none;border:1px solid rgba(255,255,255,.3);color:#fff;border-radius:6px;padding:6px 10px;font:inherit;cursor:pointer}
+@media(max-width:1020px){nav.main{display:none;position:absolute;left:0;right:0;top:64px;background:var(--ink);padding:10px 20px 16px;flex-direction:column;z-index:20}nav.main.open{display:flex}.menu-btn{display:block}header.top{position:relative}}
+.crumbs{font-size:.85rem;color:var(--ink-2);margin:18px 0 6px}.crumbs a{color:var(--ink-2);text-decoration:none}.crumbs a:hover{text-decoration:underline}
+h1{font-size:clamp(1.7rem,3.6vw,2.5rem);line-height:1.15;letter-spacing:-.02em;margin:.25em 0 .35em;font-weight:700}
+.lead{font-size:1.1rem;color:var(--ink-2);max-width:64ch;margin:0 0 22px}
+h2{font-size:1.45rem;letter-spacing:-.01em;margin:1.8em 0 .5em;line-height:1.25}
+h3{font-size:1.1rem;margin:1.4em 0 .4em}
+p,li{max-width:72ch}
+.calc{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--pri);border-radius:var(--r);padding:22px;margin:0 0 28px;box-shadow:0 6px 24px rgba(15,27,45,.06)}
+.calc h2{margin:0 0 14px;font-size:1.15rem}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+label{display:block;font-size:.86rem;font-weight:600;color:var(--ink-2);margin-bottom:5px}
+input[type=time],input[type=number],input[type=date],input[type=text],select{width:100%;font:inherit;font-size:1.05rem;padding:10px 12px;border:1px solid #B7C1D1;border-radius:8px;background:#fff;color:var(--ink);min-height:46px}
+input:focus,select:focus,button:focus-visible{outline:3px solid rgba(29,78,216,.3);outline-offset:1px;border-color:var(--pri)}
+.btn{font:inherit;font-weight:600;font-size:1rem;padding:11px 20px;border-radius:8px;border:0;background:var(--pri);color:#fff;cursor:pointer;min-height:46px}
+.btn:hover{background:var(--pri-d)}.btn.ghost{background:transparent;color:var(--ink-2);border:1px solid var(--line)}.btn.ghost:hover{background:var(--bg);color:var(--ink)}
+.btn.sm{padding:6px 12px;min-height:36px;font-size:.9rem}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;align-items:center}
+.chk{display:flex;align-items:center;gap:8px;font-weight:500;color:var(--ink);margin:0}.chk input{width:18px;height:18px}
+.result{margin-top:18px;background:var(--sun-bg);border:1px solid var(--sun-line);border-radius:var(--r);padding:16px 18px}
+.result .big{font-size:clamp(2rem,5vw,2.9rem);font-weight:700;letter-spacing:-.02em;line-height:1.1}
+.result .sub{color:var(--ink-2);font-size:.95rem;margin-top:4px}
+.result dl{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;margin:10px 0 0;font-size:.98rem}.result dt{color:var(--ink-2)}.result dd{margin:0;font-weight:600}
+.hint{font-size:.85rem;color:var(--ink-2);margin-top:8px}
+table.t{width:100%;border-collapse:collapse;font-size:.95rem;margin:12px 0}
+table.t th,table.t td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:middle}
+table.t th{font-size:.82rem;color:var(--ink-2);font-weight:600}
+table.t input{min-height:40px;padding:6px 8px;font-size:.98rem}table.t td:nth-child(4) input{max-width:110px}
+table.t td.num{text-align:right;font-weight:600;white-space:nowrap}
+.rows{display:flex;flex-direction:column;gap:8px}.row{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;align-items:end}
+.tools{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));margin:14px 0 8px}
+.tool{display:block;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;text-decoration:none;color:var(--ink)}
+.tool:hover{border-color:var(--pri)}
+.tool strong{display:block;font-size:1.02rem;margin-bottom:4px}.tool span{font-size:.9rem;color:var(--ink-2)}
+.faq details{border-bottom:1px solid var(--line);padding:10px 0}.faq summary{font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}.faq summary::-webkit-details-marker{display:none}.faq summary::after{content:"+";color:var(--pri);font-weight:700}.faq details[open] summary::after{content:"–"}
+.faq p{margin:8px 0 2px}
+.note{border-left:4px solid var(--sun);background:var(--card);padding:12px 16px;border-radius:0 var(--r) var(--r) 0;margin:18px 0;font-size:.97rem}
+.sources{font-size:.9rem;color:var(--ink-2);border-top:1px solid var(--line);margin-top:28px;padding-top:12px}.sources ul{margin:.3em 0;padding-left:1.2em}
+.formula{background:var(--card);border:1px dashed #9FB0C9;border-radius:10px;padding:12px 16px;font-weight:600;margin:12px 0}
+footer{margin-top:56px;background:var(--ink);color:#B9C4D6;padding:30px 0;font-size:.9rem}
+footer .cols{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}footer a{color:#B9C4D6;text-decoration:none;display:block;padding:3px 0}footer a:hover{color:#fff}
+footer strong{display:block;color:#fff;margin-bottom:6px}
+.cookie{position:fixed;left:12px;right:12px;bottom:12px;background:var(--ink);color:#fff;border-radius:var(--r);padding:14px 16px;display:none;gap:12px;align-items:center;flex-wrap:wrap;z-index:50;font-size:.92rem;box-shadow:0 8px 30px rgba(0,0,0,.3)}
+.cookie.show{display:flex}.cookie p{margin:0;flex:1 1 320px;max-width:none}.cookie a{color:#fff}.cookie .btn.sm{background:#fff;color:var(--ink)}.cookie .btn.ghost{background:transparent;color:#fff;border-color:#5A6A82}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -6px}.ds{display:none}
+@media(max-width:600px){.calc{padding:14px}.dl{display:none}.ds{display:inline;font-weight:600}table.t th,table.t td{padding:7px 5px}table.t input{padding:6px 4px;font-size:.95rem}table.t td:nth-child(4) input{max-width:64px}table.t td.num{font-size:.85rem}table.pt thead{display:none}table.pt,table.pt tbody{display:block}table.pt tr{display:grid;grid-template-columns:1fr 1fr;gap:8px 10px;padding:12px 0;border-bottom:1px solid var(--line)}table.pt td{display:block;border:0;padding:0}table.pt td:first-child{grid-column:1/-1;font-size:1rem}table.pt td[data-l]::before{content:attr(data-l);display:block;font-size:.78rem;color:var(--ink-2);font-weight:600;margin-bottom:3px}table.pt td.num{grid-column:1/-1;text-align:left;font-size:1rem}table.pt td:nth-child(4) input,table.pt input{max-width:none;width:100%}.pt .ds{display:none}.pt .dl{display:inline;font-weight:700}}
+</style>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
+try{if(localStorage.getItem('cc')==='all'){gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'})}}catch(e){}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8301212931863478" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://www.calculehoras.com/#website", "url": "https://www.calculehoras.com/", "name": "Calcule Horas", "inLanguage": "pt-BR", "publisher": {"@id": "https://www.calculehoras.com/#org"}}, {"@type": "Organization", "@id": "https://www.calculehoras.com/#org", "name": "Calcule Horas", "url": "https://www.calculehoras.com/", "email": "contato@calculehoras.com", "logo": {"@type": "ImageObject", "url": "https://www.calculehoras.com/assets/logo.png"}}, {"@type": "WebPage", "@id": "https://www.calculehoras.com/dias-uteis/#webpage", "url": "https://www.calculehoras.com/dias-uteis/", "name": "Calculadora de Dias Úteis 2026 – com Feriados Nacionais", "description": "Conte os dias úteis entre duas datas descontando sábados, domingos e feriados nacionais. Veja quantos dias úteis tem cada mês de 2026 e a lista oficial de feriados.", "inLanguage": "pt-BR", "isPartOf": {"@id": "https://www.calculehoras.com/#website"}, "datePublished": "2026-10-10", "dateModified": "2026-10-10", "primaryImageOfPage": {"@type": "ImageObject", "url": "https://www.calculehoras.com/assets/og.png"}}, {"@type": "WebApplication", "@id": "https://www.calculehoras.com/dias-uteis/#app", "name": "Calculadora de dias úteis", "url": "https://www.calculehoras.com/dias-uteis/", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Web", "browserRequirements": "Requer JavaScript", "inLanguage": "pt-BR", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "BRL"}, "description": "Conte os dias úteis entre duas datas descontando sábados, domingos e feriados nacionais. Veja quantos dias úteis tem cada mês de 2026 e a lista oficial de feriados.", "isAccessibleForFree": true}, {"@type": "BreadcrumbList", "@id": "https://www.calculehoras.com/dias-uteis/#crumbs", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.calculehoras.com/"}, {"@type": "ListItem", "position": 2, "name": "Dias úteis", "item": "https://www.calculehoras.com/dias-uteis/"}]}, {"@type": "FAQPage", "@id": "https://www.calculehoras.com/dias-uteis/#faq", "mainEntity": [{"@type": "Question", "name": "Quantos dias úteis tem 2026?", "acceptedAnswer": {"@type": "Answer", "text": "252 dias úteis de segunda a sexta, considerando os feriados nacionais. Carnaval e Corpus Christi são pontos facultativos e estão incluídos como dias úteis nessa conta."}}, {"@type": "Question", "name": "Sábado é dia útil?", "acceptedAnswer": {"@type": "Answer", "text": "Para prazos bancários e a maioria das empresas, não. Para o cálculo do DSR e alguns prazos trabalhistas, sim. Marque a opção “Sábado é dia útil” quando for o seu caso."}}, {"@type": "Question", "name": "Carnaval é feriado nacional?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Carnaval é ponto facultativo nacional. Em alguns estados e municípios ele é feriado por lei local."}}, {"@type": "Question", "name": "Quais são os feriados nacionais de 2026?", "acceptedAnswer": {"@type": "Answer", "text": "1/1, 3/4 (Paixão de Cristo), 21/4, 1/5, 7/9, 12/10, 2/11, 15/11, 20/11 (Consciência Negra) e 25/12."}}, {"@type": "Question", "name": "Quantos dias úteis tem um mês?", "acceptedAnswer": {"@type": "Answer", "text": "Em média 21 a 22 dias úteis de segunda a sexta. O número exato depende dos fins de semana e feriados — veja a tabela de 2026 nesta página."}}]}]}</script>
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="logo" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="8" fill="#1D4ED8"/><circle cx="16" cy="16" r="9.5" fill="#fff"/><path d="M16 9.5V16l4.5 3" stroke="#0F1B2D" stroke-width="2.4" stroke-linecap="round" fill="none"/><circle cx="16" cy="16" r="1.7" fill="#F5B700"/></svg>Calcule Horas</a><button class="menu-btn" id="mb" aria-expanded="false" aria-controls="nav">Menu</button><nav class="main" id="nav" aria-label="Calculadoras"><a href="/">Horas</a><a href="/horas-trabalhadas/">Horas trabalhadas</a><a href="/hora-extra/">Hora extra</a><a href="/adicional-noturno/">Adicional noturno</a><a href="/dias-uteis/" aria-current="page">Dias úteis</a><a href="/calculadora-de-datas/">Datas</a><a href="/banco-de-horas/">Banco de horas</a><a href="/dsr-hora-extra/">DSR</a></nav></div></header>
+<main class="wrap">
+<nav class="crumbs" aria-label="Navegação estrutural"><a href="/">Início</a> › Dias úteis</nav>
+<h1>Calculadora de dias úteis</h1>
+<p class="lead">Informe a data inicial e a final para contar os dias úteis, já descontando fins de semana e feriados nacionais. Em 2026, o ano tem 252 dias úteis de segunda a sexta.</p>
+
+<div class="calc">
+<h2>Contar dias úteis entre duas datas</h2>
+<div class="grid"><div><label for="d1">Data inicial</label><input type="date" id="d1"></div><div><label for="d2">Data final</label><input type="date" id="d2"></div></div>
+<div class="actions"><label class="chk"><input type="checkbox" id="sab"> Sábado é dia útil</label><label class="chk"><input type="checkbox" id="car"> Descontar Carnaval</label><label class="chk"><input type="checkbox" id="cor"> Descontar Corpus Christi</label><label class="chk"><input type="checkbox" id="inc" checked> Incluir a data inicial</label></div>
+<div class="result" id="res" aria-live="polite"><div class="big" id="t">– dias úteis</div><div class="sub" id="td"></div><dl><dt>Dias corridos</dt><dd id="dc">–</dd><dt>Fins de semana</dt><dd id="fs">–</dd><dt>Feriados no período</dt><dd id="fp">–</dd></dl>
+<div class="actions"><button class="btn sm ghost" type="button" onclick="copyRes('res',this)">Copiar resultado</button></div></div>
+<p class="hint">Feriados estaduais e municipais não são descontados. Carnaval e Corpus Christi são pontos facultativos nacionais — marque se não houver expediente.</p>
+</div>
+<h2>Quantos dias úteis tem cada mês de 2026</h2>
+<div class="tw"><table class="t"><thead><tr><th>Mês</th><th style="text-align:right">Seg. a sex.</th><th style="text-align:right">Seg. a sáb.</th></tr></thead><tbody><tr><td>Janeiro</td><td class="num">21</td><td class="num">26</td></tr><tr><td>Fevereiro</td><td class="num">20</td><td class="num">24</td></tr><tr><td>Março</td><td class="num">22</td><td class="num">26</td></tr><tr><td>Abril</td><td class="num">20</td><td class="num">24</td></tr><tr><td>Maio</td><td class="num">20</td><td class="num">25</td></tr><tr><td>Junho</td><td class="num">22</td><td class="num">26</td></tr><tr><td>Julho</td><td class="num">23</td><td class="num">27</td></tr><tr><td>Agosto</td><td class="num">21</td><td class="num">26</td></tr><tr><td>Setembro</td><td class="num">21</td><td class="num">25</td></tr><tr><td>Outubro</td><td class="num">21</td><td class="num">26</td></tr><tr><td>Novembro</td><td class="num">19</td><td class="num">23</td></tr><tr><td>Dezembro</td><td class="num">22</td><td class="num">26</td></tr><tr><td><strong>Total 2026</strong></td><td class="num">252</td><td class="num">304</td></tr></tbody></table></div>
+<p class="hint">Considera os feriados nacionais. Carnaval (16 e 17/2) e Corpus Christi (4/6) contam como dias úteis por serem pontos facultativos.</p>
+<h2>Feriados nacionais de 2026</h2>
+<ul><li>01/01/2026 (quinta-feira) – Confraternização Universal</li><li>03/04/2026 (sexta-feira) – Paixão de Cristo (Sexta-feira Santa)</li><li>21/04/2026 (terça-feira) – Tiradentes</li><li>01/05/2026 (sexta-feira) – Dia do Trabalho</li><li>07/09/2026 (segunda-feira) – Independência do Brasil</li><li>12/10/2026 (segunda-feira) – Nossa Senhora Aparecida</li><li>02/11/2026 (segunda-feira) – Finados</li><li>15/11/2026 (domingo) – Proclamação da República</li><li>20/11/2026 (sexta-feira) – Dia Nacional de Zumbi e da Consciência Negra</li><li>25/12/2026 (sexta-feira) – Natal</li></ul>
+<p>Pontos facultativos: Carnaval em 16 e 17 de fevereiro, Quarta-feira de Cinzas até as 14h (18/2) e Corpus Christi em 4 de junho (Portaria MGI nº 11.460/2025). O Dia Nacional de Zumbi e da Consciência Negra (20/11) é feriado nacional desde 2024 (Lei 14.759/2023).</p>
+<h2>Como contar dias úteis</h2>
+<ol><li>Conte todos os dias do período (dias corridos).</li><li>Retire os sábados e domingos.</li><li>Retire os feriados que caem de segunda a sexta.</li></ol>
+<p>Precisa somar ou subtrair dias corridos, ou saber a diferença em anos, meses e dias? Use a <a href="/calculadora-de-datas/">calculadora de datas</a>. Para contar quanto falta para uma data, veja <a href="/quantos-dias-faltam/">quantos dias faltam</a>.</p>
+
+<section class="faq"><h2>Perguntas frequentes</h2><details><summary>Quantos dias úteis tem 2026?</summary><p>252 dias úteis de segunda a sexta, considerando os feriados nacionais. Carnaval e Corpus Christi são pontos facultativos e estão incluídos como dias úteis nessa conta.</p></details><details><summary>Sábado é dia útil?</summary><p>Para prazos bancários e a maioria das empresas, não. Para o cálculo do DSR e alguns prazos trabalhistas, sim. Marque a opção “Sábado é dia útil” quando for o seu caso.</p></details><details><summary>Carnaval é feriado nacional?</summary><p>Não. Carnaval é ponto facultativo nacional. Em alguns estados e municípios ele é feriado por lei local.</p></details><details><summary>Quais são os feriados nacionais de 2026?</summary><p>1/1, 3/4 (Paixão de Cristo), 21/4, 1/5, 7/9, 12/10, 2/11, 15/11, 20/11 (Consciência Negra) e 25/12.</p></details><details><summary>Quantos dias úteis tem um mês?</summary><p>Em média 21 a 22 dias úteis de segunda a sexta. O número exato depende dos fins de semana e feriados — veja a tabela de 2026 nesta página.</p></details></section>
+<section class="sources"><strong>Base legal e fontes</strong><ul><li><a href="https://www.planalto.gov.br/ccivil_03/leis/l0662.htm" rel="noopener" target="_blank">Lei nº 662/1949 – feriados nacionais</a></li><li><a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14759.htm" rel="noopener" target="_blank">Lei nº 14.759/2023 – feriado da Consciência Negra</a></li></ul>Atualizado em 10 de outubro de 2026. Os cálculos são estimativas educativas e não substituem a orientação de um contador ou advogado trabalhista; convenções coletivas podem prever regras mais favoráveis.</section>
+<section><h2>Outras calculadoras</h2><div class="tools"><a class="tool" href="/"><strong>Calculadora de horas</strong><span>Some e subtraia horas e minutos ou calcule o tempo entre dois horários.</span></a><a class="tool" href="/horas-trabalhadas/"><strong>Horas trabalhadas</strong><span>Cartão de ponto da semana com intervalo: total, horas extras e saldo.</span></a><a class="tool" href="/hora-extra/"><strong>Hora extra</strong><span>Valor da hora extra com adicional de 50% e 100%, divisor da CLT e DSR.</span></a><a class="tool" href="/adicional-noturno/"><strong>Adicional noturno</strong><span>Horas noturnas (22h–5h), hora reduzida de 52min30s e valor do adicional de 20%.</span></a><a class="tool" href="/dsr-hora-extra/"><strong>DSR sobre hora extra</strong><span>Reflexo das horas extras no descanso semanal remunerado, com dias do mês automáticos.</span></a><a class="tool" href="/calculadora-de-datas/"><strong>Calculadora de datas</strong><span>Diferença entre datas em anos, meses e dias; somar e subtrair dias corridos.</span></a><a class="tool" href="/quantos-dias-faltam/"><strong>Quantos dias faltam</strong><span>Contagem regressiva em dias corridos e úteis até qualquer data ou feriado.</span></a><a class="tool" href="/banco-de-horas/"><strong>Banco de horas</strong><span>Saldo do banco de horas com créditos e débitos, prazos da CLT e valor estimado.</span></a><a class="tool" href="/horas-em-decimal/"><strong>Horas em decimal</strong><span>Converta horas e minutos em decimal e vice-versa, com tabela completa.</span></a></div></section>
+</main>
+<footer><div class="wrap"><div class="cols">
+<div><strong>Calcule Horas</strong>Calculadoras gratuitas de horas, hora extra, adicional noturno e dias úteis, atualizadas com as regras da CLT. Tudo é calculado no seu navegador – nenhum dado é enviado ou armazenado.</div>
+<div><strong>Horas</strong><a href="/">Calculadora de horas</a><a href="/horas-trabalhadas/">Horas trabalhadas</a><a href="/banco-de-horas/">Banco de horas</a><a href="/horas-em-decimal/">Horas em decimal</a></div>
+<div><strong>Salário e jornada</strong><a href="/hora-extra/">Hora extra</a><a href="/adicional-noturno/">Adicional noturno</a><a href="/dsr-hora-extra/">DSR sobre hora extra</a></div>
+<div><strong>Datas</strong><a href="/dias-uteis/">Dias úteis</a><a href="/calculadora-de-datas/">Calculadora de datas</a><a href="/quantos-dias-faltam/">Quantos dias faltam</a></div>
+<div><strong>Institucional</strong><a href="/sobre/">Sobre</a><a href="/contato/">Contato</a><a href="/politica-de-privacidade/">Política de privacidade</a><a href="/termos-de-uso/">Termos de uso</a></div>
+</div><p style="margin:22px 0 0;max-width:none">© 2026 Calcule Horas · Resultados estimativos, sem valor de parecer jurídico ou contábil.</p></div></footer>
+<div class="cookie" id="cb" role="dialog" aria-label="Aviso de cookies"><p>Usamos cookies para exibir anúncios (Google AdSense). Ao clicar em “Aceitar todos”, você permite anúncios personalizados. Saiba mais na <a href="/politica-de-privacidade/">Política de privacidade</a>.</p><button class="btn sm ghost" id="cc-min">Somente necessários</button><button class="btn sm" id="cc-all">Aceitar todos</button></div>
+<script>
+(function(){
+var b=document.getElementById('cb');try{if(!localStorage.getItem('cc')){b.classList.add('show')}}catch(e){b.classList.add('show')}
+function set(v){try{localStorage.setItem('cc',v)}catch(e){}b.classList.remove('show');if(v==='all'){gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'})}}
+document.getElementById('cc-all').onclick=function(){set('all')};document.getElementById('cc-min').onclick=function(){set('min')};
+var m=document.getElementById('mb');if(m){m.onclick=function(){var n=document.getElementById('nav');n.classList.toggle('open');m.setAttribute('aria-expanded',n.classList.contains('open'))}}
+})();
+function pad(n){return (n<10?'0':'')+n}
+function fmtHM(mins){var s=mins<0?'-':'';mins=Math.abs(Math.round(mins));return s+Math.floor(mins/60)+':'+pad(mins%60)}
+function fmtH(mins){var s=mins<0?'-':'';mins=Math.abs(Math.round(mins));return s+Math.floor(mins/60)+'h'+pad(mins%60)}
+function fmtDec(mins){return (Math.round(mins/60*100)/100).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function brl(x){return x.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}
+function num(x,d){return x.toLocaleString('pt-BR',{minimumFractionDigits:d||0,maximumFractionDigits:d||2})}
+function tmin(v){if(!v)return null;var p=v.split(':');return parseInt(p[0],10)*60+parseInt(p[1],10)}
+function val(id){return parseFloat(String(document.getElementById(id).value).replace(',','.'))||0}
+function copyRes(id,btn){var t=document.getElementById(id).innerText.replace(/\s+/g,' ').trim();navigator.clipboard&&navigator.clipboard.writeText(t).then(function(){btn.textContent='Copiado ✓';setTimeout(function(){btn.textContent='Copiar resultado'},1500)})}
+function easter(y){var a=y%19,b=Math.floor(y/100),c=y%100,d=Math.floor(b/4),e=b%4,f=Math.floor((b+8)/25),g=Math.floor((b-f+1)/3),h=(19*a+b-d-g+15)%30,i=Math.floor(c/4),k=c%4,l=(32+2*e+2*i-h-k)%7,m=Math.floor((a+11*h+22*l)/451),mo=Math.floor((h+l-7*m+114)/31),da=((h+l-7*m+114)%31)+1;return new Date(y,mo-1,da)}
+function feriados(y,opt){opt=opt||{};var L=[[1,1,'Confraternização Universal'],[4,21,'Tiradentes'],[5,1,'Dia do Trabalho'],[9,7,'Independência do Brasil'],[10,12,'Nossa Senhora Aparecida'],[11,2,'Finados'],[11,15,'Proclamação da República'],[12,25,'Natal']];if(y>=2024)L.push([11,20,'Consciência Negra']);var out={};L.forEach(function(x){out[y+'-'+pad(x[0])+'-'+pad(x[1])]=x[2]});var E=easter(y);function add(off,n){var d=new Date(E);d.setDate(d.getDate()+off);out[d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())]=n}add(-2,'Paixão de Cristo');if(opt.carnaval){add(-48,'Carnaval (ponto facultativo)');add(-47,'Carnaval (ponto facultativo)')}if(opt.corpus){add(60,'Corpus Christi (ponto facultativo)')}return out}
+function isoD(d){return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())}
+
+(function(){var t=new Date();document.getElementById('d1').value=isoD(t);var e=new Date(t);e.setDate(e.getDate()+30);document.getElementById('d2').value=isoD(e);
+function c(){var a=document.getElementById('d1').value,b=document.getElementById('d2').value;if(!a||!b)return;var A=new Date(a+'T12:00:00'),B=new Date(b+'T12:00:00');if(B<A){var x=A;A=B;B=x}
+var sab=document.getElementById('sab').checked,opt={carnaval:document.getElementById('car').checked,corpus:document.getElementById('cor').checked},inc=document.getElementById('inc').checked;
+var cur=new Date(A);if(!inc)cur.setDate(cur.getDate()+1);var u=0,f=0,fw=0,tot=0,names=[],cache={};
+while(cur<=B){var y=cur.getFullYear();if(!cache[y])cache[y]=feriados(y,opt);var k=isoD(cur),dw=cur.getDay(),we=dw===0||(dw===6&&!sab);tot++;if(we)fw++;else if(cache[y][k]){f++;names.push(cur.getDate()+'/'+(cur.getMonth()+1)+' '+cache[y][k])}else u++;cur.setDate(cur.getDate()+1)}
+document.getElementById('t').textContent=u.toLocaleString('pt-BR')+' dias úteis';document.getElementById('td').textContent=A.toLocaleDateString('pt-BR')+' a '+B.toLocaleDateString('pt-BR');
+document.getElementById('dc').textContent=tot;document.getElementById('fs').textContent=fw;document.getElementById('fp').textContent=f?f+' — '+names.join(' · '):'nenhum'}
+['d1','d2','sab','car','cor','inc'].forEach(function(i){document.getElementById(i).addEventListener('input',c)});c()})();</script>
+</body>
+</html>

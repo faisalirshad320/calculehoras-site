@@ -1,0 +1,45 @@
+﻿# Calcule Horas
+
+> Calculadoras gratuitas em português do Brasil para horas, horas trabalhadas, hora extra, adicional noturno, DSR, banco de horas, dias úteis e datas. Regras da CLT e da Constituição Federal citadas em cada página. Cálculos feitos no navegador, sem cadastro.
+
+Idioma: pt-BR. Público: trabalhadores, empregadores, departamento pessoal e contadores no Brasil.
+
+## Calculadoras
+- [Calculadora de horas](https://www.calculehoras.com/): Some e subtraia horas e minutos ou calcule o tempo entre dois horários.
+- [Horas trabalhadas](https://www.calculehoras.com/horas-trabalhadas/): Cartão de ponto da semana com intervalo: total, horas extras e saldo.
+- [Hora extra](https://www.calculehoras.com/hora-extra/): Valor da hora extra com adicional de 50% e 100%, divisor da CLT e DSR.
+- [Adicional noturno](https://www.calculehoras.com/adicional-noturno/): Horas noturnas (22h–5h), hora reduzida de 52min30s e valor do adicional de 20%.
+- [DSR sobre hora extra](https://www.calculehoras.com/dsr-hora-extra/): Reflexo das horas extras no descanso semanal remunerado, com dias do mês automáticos.
+- [Dias úteis](https://www.calculehoras.com/dias-uteis/): Conte dias úteis entre duas datas com os feriados nacionais de qualquer ano.
+- [Calculadora de datas](https://www.calculehoras.com/calculadora-de-datas/): Diferença entre datas em anos, meses e dias; somar e subtrair dias corridos.
+- [Quantos dias faltam](https://www.calculehoras.com/quantos-dias-faltam/): Contagem regressiva em dias corridos e úteis até qualquer data ou feriado.
+- [Banco de horas](https://www.calculehoras.com/banco-de-horas/): Saldo do banco de horas com créditos e débitos, prazos da CLT e valor estimado.
+- [Horas em decimal](https://www.calculehoras.com/horas-em-decimal/): Converta horas e minutos em decimal e vice-versa, com tabela completa.
+
+## Regras e valores de referência (atualizado em outubro de 2026)
+- Jornada máxima: 8 horas diárias e 44 semanais (CF, art. 7º, XIII). Divisor do salário-hora = jornada semanal × 5 (44h → 220; 40h → 200; 36h → 180).
+- Hora extra: adicional mínimo de 50% (CF, art. 7º, XVI); máximo de 2 horas extras por dia (CLT, art. 59). Domingos e feriados não compensados: 100% (Súmula 146 do TST).
+- DSR sobre horas extras = (valor das horas extras do mês ÷ dias úteis de segunda a sábado) × domingos e feriados (Lei 605/1949; Súmula 172 do TST).
+- Adicional noturno urbano: 20%, das 22h às 5h, hora noturna de 52min30s (CLT, art. 73). Rural: 25%; lavoura 21h–5h, pecuária 20h–4h (Lei 5.889/1973).
+- Intervalo intrajornada: mais de 6h → mínimo 1h e máximo 2h; de 4h a 6h → 15 min (CLT, art. 71). Descanso entre jornadas: 11h (CLT, art. 66). Tolerância de ponto: 5 min por marcação, máx. 10 min/dia (CLT, art. 58, §1º).
+- Banco de horas: acordo individual escrito → compensação em até 6 meses; acordo/convenção coletiva → até 1 ano; no mesmo mês → acordo tácito (CLT, art. 59, §§ 2º, 5º e 6º).
+- Salário mínimo 2026: R$ 1.621,00 (hora normal com 44h: R$ 7,37; hora extra 50%: R$ 11,05).
+- Feriados nacionais de 2026 (Portaria MGI nº 11.460/2025):
+  - 01/01/2026 (quinta-feira): Confraternização Universal
+  - 03/04/2026 (sexta-feira): Paixão de Cristo (Sexta-feira Santa)
+  - 21/04/2026 (terça-feira): Tiradentes
+  - 01/05/2026 (sexta-feira): Dia do Trabalho
+  - 07/09/2026 (segunda-feira): Independência do Brasil
+  - 12/10/2026 (segunda-feira): Nossa Senhora Aparecida
+  - 02/11/2026 (segunda-feira): Finados
+  - 15/11/2026 (domingo): Proclamação da República
+  - 20/11/2026 (sexta-feira): Dia Nacional de Zumbi e da Consciência Negra
+  - 25/12/2026 (sexta-feira): Natal
+- Pontos facultativos 2026: Carnaval 16 e 17/2; Corpus Christi 4/6.
+- Dias úteis (seg. a sex.) por mês em 2026: 1: 21, 2: 20, 3: 22, 4: 20, 5: 20, 6: 22, 7: 23, 8: 21, 9: 21, 10: 21, 11: 19, 12: 22.
+
+## Institucional
+- [Sobre](https://www.calculehoras.com/sobre/)
+- [Contato](https://www.calculehoras.com/contato/)
+- [Política de privacidade](https://www.calculehoras.com/politica-de-privacidade/)
+- [Termos de uso](https://www.calculehoras.com/termos-de-uso/)

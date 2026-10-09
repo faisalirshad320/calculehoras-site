@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Converter Horas em Decimal – Tabela e Calculadora</title>
+<meta name="description" content="Converta horas e minutos em horas decimais (7h45 = 7,75) e decimal em horas e minutos. Tabela de conversão de minutos para a folha de ponto e o cálculo de salário.">
+<link rel="canonical" href="https://www.calculehoras.com/horas-em-decimal/">
+<link rel="alternate" hreflang="pt-BR" href="https://www.calculehoras.com/horas-em-decimal/">
+<link rel="alternate" hreflang="x-default" href="https://www.calculehoras.com/horas-em-decimal/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta property="og:type" content="website"><meta property="og:locale" content="pt_BR"><meta property="og:site_name" content="Calcule Horas">
+<meta property="og:title" content="Converter Horas em Decimal – Tabela e Calculadora"><meta property="og:description" content="Converta horas e minutos em horas decimais (7h45 = 7,75) e decimal em horas e minutos. Tabela de conversão de minutos para a folha de ponto e o cálculo de salário."><meta property="og:url" content="https://www.calculehoras.com/horas-em-decimal/"><meta property="og:image" content="https://www.calculehoras.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0F1B2D">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0F1B2D;--ink-2:#46546A;--line:#D8DEE8;--bg:#F1F4F9;--card:#FFFFFF;--pri:#1D4ED8;--pri-d:#1739A8;--sun:#F5B700;--sun-bg:#FFF7DB;--sun-line:#F0D27A;--r:12px;--max:1080px}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17px;line-height:1.62;color:var(--ink);background:var(--bg);font-variant-numeric:tabular-nums}
+a{color:var(--pri-d)}a:hover{color:var(--pri)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+header.top{background:var(--ink);color:#fff}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.15rem;color:#fff;text-decoration:none;letter-spacing:-.01em}
+.logo svg{width:30px;height:30px}
+nav.main{display:flex;gap:2px;flex-wrap:wrap}
+nav.main a{font-size:.85rem;padding:5px 8px;white-space:nowrap;border-radius:6px;text-decoration:none;color:#C9D3E3;font-weight:500}
+nav.main a:hover,nav.main a[aria-current]{background:rgba(255,255,255,.1);color:#fff}
+.menu-btn{display:none;background:none;border:1px solid rgba(255,255,255,.3);color:#fff;border-radius:6px;padding:6px 10px;font:inherit;cursor:pointer}
+@media(max-width:1020px){nav.main{display:none;position:absolute;left:0;right:0;top:64px;background:var(--ink);padding:10px 20px 16px;flex-direction:column;z-index:20}nav.main.open{display:flex}.menu-btn{display:block}header.top{position:relative}}
+.crumbs{font-size:.85rem;color:var(--ink-2);margin:18px 0 6px}.crumbs a{color:var(--ink-2);text-decoration:none}.crumbs a:hover{text-decoration:underline}
+h1{font-size:clamp(1.7rem,3.6vw,2.5rem);line-height:1.15;letter-spacing:-.02em;margin:.25em 0 .35em;font-weight:700}
+.lead{font-size:1.1rem;color:var(--ink-2);max-width:64ch;margin:0 0 22px}
+h2{font-size:1.45rem;letter-spacing:-.01em;margin:1.8em 0 .5em;line-height:1.25}
+h3{font-size:1.1rem;margin:1.4em 0 .4em}
+p,li{max-width:72ch}
+.calc{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--pri);border-radius:var(--r);padding:22px;margin:0 0 28px;box-shadow:0 6px 24px rgba(15,27,45,.06)}
+.calc h2{margin:0 0 14px;font-size:1.15rem}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+label{display:block;font-size:.86rem;font-weight:600;color:var(--ink-2);margin-bottom:5px}
+input[type=time],input[type=number],input[type=date],input[type=text],select{width:100%;font:inherit;font-size:1.05rem;padding:10px 12px;border:1px solid #B7C1D1;border-radius:8px;background:#fff;color:var(--ink);min-height:46px}
+input:focus,select:focus,button:focus-visible{outline:3px solid rgba(29,78,216,.3);outline-offset:1px;border-color:var(--pri)}
+.btn{font:inherit;font-weight:600;font-size:1rem;padding:11px 20px;border-radius:8px;border:0;background:var(--pri);color:#fff;cursor:pointer;min-height:46px}
+.btn:hover{background:var(--pri-d)}.btn.ghost{background:transparent;color:var(--ink-2);border:1px solid var(--line)}.btn.ghost:hover{background:var(--bg);color:var(--ink)}
+.btn.sm{padding:6px 12px;min-height:36px;font-size:.9rem}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;align-items:center}
+.chk{display:flex;align-items:center;gap:8px;font-weight:500;color:var(--ink);margin:0}.chk input{width:18px;height:18px}
+.result{margin-top:18px;background:var(--sun-bg);border:1px solid var(--sun-line);border-radius:var(--r);padding:16px 18px}
+.result .big{font-size:clamp(2rem,5vw,2.9rem);font-weight:700;letter-spacing:-.02em;line-height:1.1}
+.result .sub{color:var(--ink-2);font-size:.95rem;margin-top:4px}
+.result dl{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;margin:10px 0 0;font-size:.98rem}.result dt{color:var(--ink-2)}.result dd{margin:0;font-weight:600}
+.hint{font-size:.85rem;color:var(--ink-2);margin-top:8px}
+table.t{width:100%;border-collapse:collapse;font-size:.95rem;margin:12px 0}
+table.t th,table.t td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:middle}
+table.t th{font-size:.82rem;color:var(--ink-2);font-weight:600}
+table.t input{min-height:40px;padding:6px 8px;font-size:.98rem}table.t td:nth-child(4) input{max-width:110px}
+table.t td.num{text-align:right;font-weight:600;white-space:nowrap}
+.rows{display:flex;flex-direction:column;gap:8px}.row{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;align-items:end}
+.tools{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));margin:14px 0 8px}
+.tool{display:block;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;text-decoration:none;color:var(--ink)}
+.tool:hover{border-color:var(--pri)}
+.tool strong{display:block;font-size:1.02rem;margin-bottom:4px}.tool span{font-size:.9rem;color:var(--ink-2)}
+.faq details{border-bottom:1px solid var(--line);padding:10px 0}.faq summary{font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}.faq summary::-webkit-details-marker{display:none}.faq summary::after{content:"+";color:var(--pri);font-weight:700}.faq details[open] summary::after{content:"–"}
+.faq p{margin:8px 0 2px}
+.note{border-left:4px solid var(--sun);background:var(--card);padding:12px 16px;border-radius:0 var(--r) var(--r) 0;margin:18px 0;font-size:.97rem}
+.sources{font-size:.9rem;color:var(--ink-2);border-top:1px solid var(--line);margin-top:28px;padding-top:12px}.sources ul{margin:.3em 0;padding-left:1.2em}
+.formula{background:var(--card);border:1px dashed #9FB0C9;border-radius:10px;padding:12px 16px;font-weight:600;margin:12px 0}
+footer{margin-top:56px;background:var(--ink);color:#B9C4D6;padding:30px 0;font-size:.9rem}
+footer .cols{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}footer a{color:#B9C4D6;text-decoration:none;display:block;padding:3px 0}footer a:hover{color:#fff}
+footer strong{display:block;color:#fff;margin-bottom:6px}
+.cookie{position:fixed;left:12px;right:12px;bottom:12px;background:var(--ink);color:#fff;border-radius:var(--r);padding:14px 16px;display:none;gap:12px;align-items:center;flex-wrap:wrap;z-index:50;font-size:.92rem;box-shadow:0 8px 30px rgba(0,0,0,.3)}
+.cookie.show{display:flex}.cookie p{margin:0;flex:1 1 320px;max-width:none}.cookie a{color:#fff}.cookie .btn.sm{background:#fff;color:var(--ink)}.cookie .btn.ghost{background:transparent;color:#fff;border-color:#5A6A82}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -6px}.ds{display:none}
+@media(max-width:600px){.calc{padding:14px}.dl{display:none}.ds{display:inline;font-weight:600}table.t th,table.t td{padding:7px 5px}table.t input{padding:6px 4px;font-size:.95rem}table.t td:nth-child(4) input{max-width:64px}table.t td.num{font-size:.85rem}table.pt thead{display:none}table.pt,table.pt tbody{display:block}table.pt tr{display:grid;grid-template-columns:1fr 1fr;gap:8px 10px;padding:12px 0;border-bottom:1px solid var(--line)}table.pt td{display:block;border:0;padding:0}table.pt td:first-child{grid-column:1/-1;font-size:1rem}table.pt td[data-l]::before{content:attr(data-l);display:block;font-size:.78rem;color:var(--ink-2);font-weight:600;margin-bottom:3px}table.pt td.num{grid-column:1/-1;text-align:left;font-size:1rem}table.pt td:nth-child(4) input,table.pt input{max-width:none;width:100%}.pt .ds{display:none}.pt .dl{display:inline;font-weight:700}}
+</style>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
+try{if(localStorage.getItem('cc')==='all'){gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'})}}catch(e){}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8301212931863478" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://www.calculehoras.com/#website", "url": "https://www.calculehoras.com/", "name": "Calcule Horas", "inLanguage": "pt-BR", "publisher": {"@id": "https://www.calculehoras.com/#org"}}, {"@type": "Organization", "@id": "https://www.calculehoras.com/#org", "name": "Calcule Horas", "url": "https://www.calculehoras.com/", "email": "contato@calculehoras.com", "logo": {"@type": "ImageObject", "url": "https://www.calculehoras.com/assets/logo.png"}}, {"@type": "WebPage", "@id": "https://www.calculehoras.com/horas-em-decimal/#webpage", "url": "https://www.calculehoras.com/horas-em-decimal/", "name": "Converter Horas em Decimal – Tabela e Calculadora", "description": "Converta horas e minutos em horas decimais (7h45 = 7,75) e decimal em horas e minutos. Tabela de conversão de minutos para a folha de ponto e o cálculo de salário.", "inLanguage": "pt-BR", "isPartOf": {"@id": "https://www.calculehoras.com/#website"}, "datePublished": "2026-10-10", "dateModified": "2026-10-10", "primaryImageOfPage": {"@type": "ImageObject", "url": "https://www.calculehoras.com/assets/og.png"}}, {"@type": "WebApplication", "@id": "https://www.calculehoras.com/horas-em-decimal/#app", "name": "Converter horas em decimal", "url": "https://www.calculehoras.com/horas-em-decimal/", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Web", "browserRequirements": "Requer JavaScript", "inLanguage": "pt-BR", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "BRL"}, "description": "Converta horas e minutos em horas decimais (7h45 = 7,75) e decimal em horas e minutos. Tabela de conversão de minutos para a folha de ponto e o cálculo de salário.", "isAccessibleForFree": true}, {"@type": "BreadcrumbList", "@id": "https://www.calculehoras.com/horas-em-decimal/#crumbs", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://www.calculehoras.com/"}, {"@type": "ListItem", "position": 2, "name": "Horas em decimal", "item": "https://www.calculehoras.com/horas-em-decimal/"}]}, {"@type": "FAQPage", "@id": "https://www.calculehoras.com/horas-em-decimal/#faq", "mainEntity": [{"@type": "Question", "name": "Quanto é 7h30 em decimal?", "acceptedAnswer": {"@type": "Answer", "text": "7,5 horas, porque 30 minutos ÷ 60 = 0,5."}}, {"@type": "Question", "name": "Como transformar 8,5 horas em horas e minutos?", "acceptedAnswer": {"@type": "Answer", "text": "8 horas e 30 minutos: 0,5 × 60 = 30."}}, {"@type": "Question", "name": "Quanto é 20 minutos em decimal?", "acceptedAnswer": {"@type": "Answer", "text": "0,33 hora (20 ÷ 60 = 0,333...)."}}, {"@type": "Question", "name": "Por que usar horas decimais?", "acceptedAnswer": {"@type": "Answer", "text": "Porque o valor decimal pode ser multiplicado diretamente pelo valor da hora no cálculo do salário e das horas extras."}}]}]}</script>
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="logo" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="8" fill="#1D4ED8"/><circle cx="16" cy="16" r="9.5" fill="#fff"/><path d="M16 9.5V16l4.5 3" stroke="#0F1B2D" stroke-width="2.4" stroke-linecap="round" fill="none"/><circle cx="16" cy="16" r="1.7" fill="#F5B700"/></svg>Calcule Horas</a><button class="menu-btn" id="mb" aria-expanded="false" aria-controls="nav">Menu</button><nav class="main" id="nav" aria-label="Calculadoras"><a href="/">Horas</a><a href="/horas-trabalhadas/">Horas trabalhadas</a><a href="/hora-extra/">Hora extra</a><a href="/adicional-noturno/">Adicional noturno</a><a href="/dias-uteis/">Dias úteis</a><a href="/calculadora-de-datas/">Datas</a><a href="/banco-de-horas/">Banco de horas</a><a href="/dsr-hora-extra/">DSR</a></nav></div></header>
+<main class="wrap">
+<nav class="crumbs" aria-label="Navegação estrutural"><a href="/">Início</a> › Horas em decimal</nav>
+<h1>Converter horas em decimal</h1>
+<p class="lead">7 horas e 45 minutos correspondem a 7,75 horas decimais. Use o conversor nos dois sentidos e consulte a tabela de minutos para preencher folhas de ponto e planilhas.</p>
+
+<div class="calc">
+<h2>Horas e minutos → decimal</h2>
+<div class="grid"><div><label for="h">Horas</label><input type="number" id="h" value="7" min="0"></div><div><label for="m">Minutos</label><input type="number" id="m" value="45" min="0"></div></div>
+<div class="result" id="res" aria-live="polite"><div class="big" id="t">7,75</div><div class="sub" id="td">horas decimais · 465 minutos</div></div>
+</div>
+<div class="calc">
+<h2>Decimal → horas e minutos</h2>
+<div class="grid"><div><label for="d">Horas decimais</label><input type="number" id="d" value="8.3" step="0.01" min="0"></div></div>
+<div class="result" id="res2" aria-live="polite"><div class="big" id="t2">8h18</div><div class="sub" id="t2d">8 horas e 18 minutos</div></div>
+</div>
+<h2>Tabela de minutos em horas decimais</h2>
+<div class="tw"><table class="t"><thead><tr><th>Minutos</th><th style="text-align:right">Decimal</th><th>Minutos</th><th style="text-align:right">Decimal</th></tr></thead><tbody><tr><td>0 min</td><td class="num">0,0</td><td>30 min</td><td class="num">0,5</td></tr><tr><td>1 min</td><td class="num">0,02</td><td>31 min</td><td class="num">0,52</td></tr><tr><td>2 min</td><td class="num">0,03</td><td>32 min</td><td class="num">0,53</td></tr><tr><td>3 min</td><td class="num">0,05</td><td>33 min</td><td class="num">0,55</td></tr><tr><td>4 min</td><td class="num">0,07</td><td>34 min</td><td class="num">0,57</td></tr><tr><td>5 min</td><td class="num">0,08</td><td>35 min</td><td class="num">0,58</td></tr><tr><td>6 min</td><td class="num">0,1</td><td>36 min</td><td class="num">0,6</td></tr><tr><td>7 min</td><td class="num">0,12</td><td>37 min</td><td class="num">0,62</td></tr><tr><td>8 min</td><td class="num">0,13</td><td>38 min</td><td class="num">0,63</td></tr><tr><td>9 min</td><td class="num">0,15</td><td>39 min</td><td class="num">0,65</td></tr><tr><td>10 min</td><td class="num">0,17</td><td>40 min</td><td class="num">0,67</td></tr><tr><td>11 min</td><td class="num">0,18</td><td>41 min</td><td class="num">0,68</td></tr><tr><td>12 min</td><td class="num">0,2</td><td>42 min</td><td class="num">0,7</td></tr><tr><td>13 min</td><td class="num">0,22</td><td>43 min</td><td class="num">0,72</td></tr><tr><td>14 min</td><td class="num">0,23</td><td>44 min</td><td class="num">0,73</td></tr><tr><td>15 min</td><td class="num">0,25</td><td>45 min</td><td class="num">0,75</td></tr><tr><td>16 min</td><td class="num">0,27</td><td>46 min</td><td class="num">0,77</td></tr><tr><td>17 min</td><td class="num">0,28</td><td>47 min</td><td class="num">0,78</td></tr><tr><td>18 min</td><td class="num">0,3</td><td>48 min</td><td class="num">0,8</td></tr><tr><td>19 min</td><td class="num">0,32</td><td>49 min</td><td class="num">0,82</td></tr><tr><td>20 min</td><td class="num">0,33</td><td>50 min</td><td class="num">0,83</td></tr><tr><td>21 min</td><td class="num">0,35</td><td>51 min</td><td class="num">0,85</td></tr><tr><td>22 min</td><td class="num">0,37</td><td>52 min</td><td class="num">0,87</td></tr><tr><td>23 min</td><td class="num">0,38</td><td>53 min</td><td class="num">0,88</td></tr><tr><td>24 min</td><td class="num">0,4</td><td>54 min</td><td class="num">0,9</td></tr><tr><td>25 min</td><td class="num">0,42</td><td>55 min</td><td class="num">0,92</td></tr><tr><td>26 min</td><td class="num">0,43</td><td>56 min</td><td class="num">0,93</td></tr><tr><td>27 min</td><td class="num">0,45</td><td>57 min</td><td class="num">0,95</td></tr><tr><td>28 min</td><td class="num">0,47</td><td>58 min</td><td class="num">0,97</td></tr><tr><td>29 min</td><td class="num">0,48</td><td>59 min</td><td class="num">0,98</td></tr></tbody></table></div>
+<h2>Fórmula</h2>
+<ul><li><strong>Minutos → decimal:</strong> minutos ÷ 60. Ex.: 45 ÷ 60 = 0,75.</li><li><strong>Decimal → minutos:</strong> parte decimal × 60. Ex.: 0,3 × 60 = 18 minutos.</li></ul>
+<p>O formato decimal permite multiplicar as horas direto pelo valor da hora: 7,75 h × R$ 13,64 = R$ 105,71. Para somar várias marcações, use a <a href="/">calculadora de horas</a>.</p>
+
+<section class="faq"><h2>Perguntas frequentes</h2><details><summary>Quanto é 7h30 em decimal?</summary><p>7,5 horas, porque 30 minutos ÷ 60 = 0,5.</p></details><details><summary>Como transformar 8,5 horas em horas e minutos?</summary><p>8 horas e 30 minutos: 0,5 × 60 = 30.</p></details><details><summary>Quanto é 20 minutos em decimal?</summary><p>0,33 hora (20 ÷ 60 = 0,333...).</p></details><details><summary>Por que usar horas decimais?</summary><p>Porque o valor decimal pode ser multiplicado diretamente pelo valor da hora no cálculo do salário e das horas extras.</p></details></section>
+
+<section><h2>Outras calculadoras</h2><div class="tools"><a class="tool" href="/"><strong>Calculadora de horas</strong><span>Some e subtraia horas e minutos ou calcule o tempo entre dois horários.</span></a><a class="tool" href="/horas-trabalhadas/"><strong>Horas trabalhadas</strong><span>Cartão de ponto da semana com intervalo: total, horas extras e saldo.</span></a><a class="tool" href="/hora-extra/"><strong>Hora extra</strong><span>Valor da hora extra com adicional de 50% e 100%, divisor da CLT e DSR.</span></a><a class="tool" href="/adicional-noturno/"><strong>Adicional noturno</strong><span>Horas noturnas (22h–5h), hora reduzida de 52min30s e valor do adicional de 20%.</span></a><a class="tool" href="/dsr-hora-extra/"><strong>DSR sobre hora extra</strong><span>Reflexo das horas extras no descanso semanal remunerado, com dias do mês automáticos.</span></a><a class="tool" href="/dias-uteis/"><strong>Dias úteis</strong><span>Conte dias úteis entre duas datas com os feriados nacionais de qualquer ano.</span></a><a class="tool" href="/calculadora-de-datas/"><strong>Calculadora de datas</strong><span>Diferença entre datas em anos, meses e dias; somar e subtrair dias corridos.</span></a><a class="tool" href="/quantos-dias-faltam/"><strong>Quantos dias faltam</strong><span>Contagem regressiva em dias corridos e úteis até qualquer data ou feriado.</span></a><a class="tool" href="/banco-de-horas/"><strong>Banco de horas</strong><span>Saldo do banco de horas com créditos e débitos, prazos da CLT e valor estimado.</span></a></div></section>
+</main>
+<footer><div class="wrap"><div class="cols">
+<div><strong>Calcule Horas</strong>Calculadoras gratuitas de horas, hora extra, adicional noturno e dias úteis, atualizadas com as regras da CLT. Tudo é calculado no seu navegador – nenhum dado é enviado ou armazenado.</div>
+<div><strong>Horas</strong><a href="/">Calculadora de horas</a><a href="/horas-trabalhadas/">Horas trabalhadas</a><a href="/banco-de-horas/">Banco de horas</a><a href="/horas-em-decimal/">Horas em decimal</a></div>
+<div><strong>Salário e jornada</strong><a href="/hora-extra/">Hora extra</a><a href="/adicional-noturno/">Adicional noturno</a><a href="/dsr-hora-extra/">DSR sobre hora extra</a></div>
+<div><strong>Datas</strong><a href="/dias-uteis/">Dias úteis</a><a href="/calculadora-de-datas/">Calculadora de datas</a><a href="/quantos-dias-faltam/">Quantos dias faltam</a></div>
+<div><strong>Institucional</strong><a href="/sobre/">Sobre</a><a href="/contato/">Contato</a><a href="/politica-de-privacidade/">Política de privacidade</a><a href="/termos-de-uso/">Termos de uso</a></div>
+</div><p style="margin:22px 0 0;max-width:none">© 2026 Calcule Horas · Resultados estimativos, sem valor de parecer jurídico ou contábil.</p></div></footer>
+<div class="cookie" id="cb" role="dialog" aria-label="Aviso de cookies"><p>Usamos cookies para exibir anúncios (Google AdSense). Ao clicar em “Aceitar todos”, você permite anúncios personalizados. Saiba mais na <a href="/politica-de-privacidade/">Política de privacidade</a>.</p><button class="btn sm ghost" id="cc-min">Somente necessários</button><button class="btn sm" id="cc-all">Aceitar todos</button></div>
+<script>
+(function(){
+var b=document.getElementById('cb');try{if(!localStorage.getItem('cc')){b.classList.add('show')}}catch(e){b.classList.add('show')}
+function set(v){try{localStorage.setItem('cc',v)}catch(e){}b.classList.remove('show');if(v==='all'){gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'})}}
+document.getElementById('cc-all').onclick=function(){set('all')};document.getElementById('cc-min').onclick=function(){set('min')};
+var m=document.getElementById('mb');if(m){m.onclick=function(){var n=document.getElementById('nav');n.classList.toggle('open');m.setAttribute('aria-expanded',n.classList.contains('open'))}}
+})();
+function pad(n){return (n<10?'0':'')+n}
+function fmtHM(mins){var s=mins<0?'-':'';mins=Math.abs(Math.round(mins));return s+Math.floor(mins/60)+':'+pad(mins%60)}
+function fmtH(mins){var s=mins<0?'-':'';mins=Math.abs(Math.round(mins));return s+Math.floor(mins/60)+'h'+pad(mins%60)}
+function fmtDec(mins){return (Math.round(mins/60*100)/100).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function brl(x){return x.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}
+function num(x,d){return x.toLocaleString('pt-BR',{minimumFractionDigits:d||0,maximumFractionDigits:d||2})}
+function tmin(v){if(!v)return null;var p=v.split(':');return parseInt(p[0],10)*60+parseInt(p[1],10)}
+function val(id){return parseFloat(String(document.getElementById(id).value).replace(',','.'))||0}
+function copyRes(id,btn){var t=document.getElementById(id).innerText.replace(/\s+/g,' ').trim();navigator.clipboard&&navigator.clipboard.writeText(t).then(function(){btn.textContent='Copiado ✓';setTimeout(function(){btn.textContent='Copiar resultado'},1500)})}
+function easter(y){var a=y%19,b=Math.floor(y/100),c=y%100,d=Math.floor(b/4),e=b%4,f=Math.floor((b+8)/25),g=Math.floor((b-f+1)/3),h=(19*a+b-d-g+15)%30,i=Math.floor(c/4),k=c%4,l=(32+2*e+2*i-h-k)%7,m=Math.floor((a+11*h+22*l)/451),mo=Math.floor((h+l-7*m+114)/31),da=((h+l-7*m+114)%31)+1;return new Date(y,mo-1,da)}
+function feriados(y,opt){opt=opt||{};var L=[[1,1,'Confraternização Universal'],[4,21,'Tiradentes'],[5,1,'Dia do Trabalho'],[9,7,'Independência do Brasil'],[10,12,'Nossa Senhora Aparecida'],[11,2,'Finados'],[11,15,'Proclamação da República'],[12,25,'Natal']];if(y>=2024)L.push([11,20,'Consciência Negra']);var out={};L.forEach(function(x){out[y+'-'+pad(x[0])+'-'+pad(x[1])]=x[2]});var E=easter(y);function add(off,n){var d=new Date(E);d.setDate(d.getDate()+off);out[d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())]=n}add(-2,'Paixão de Cristo');if(opt.carnaval){add(-48,'Carnaval (ponto facultativo)');add(-47,'Carnaval (ponto facultativo)')}if(opt.corpus){add(60,'Corpus Christi (ponto facultativo)')}return out}
+function isoD(d){return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())}
+
+(function(){function c1(){var t=val('h')*60+val('m');document.getElementById('t').textContent=fmtDec(t);document.getElementById('td').textContent='horas decimais · '+Math.round(t)+' minutos'}
+function c2(){var t=Math.round(val('d')*60);document.getElementById('t2').textContent=fmtH(t);document.getElementById('t2d').textContent=Math.floor(t/60)+' horas e '+(t%60)+' minutos'}
+['h','m'].forEach(function(i){document.getElementById(i).addEventListener('input',c1)});document.getElementById('d').addEventListener('input',c2);c1();c2()})();</script>
+</body>
+</html>
