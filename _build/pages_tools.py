@@ -5,7 +5,7 @@ DAYS = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"]
 
 # ============================================================ HOME — Calculadora de horas
 HOME = {
-    "path": "/", "short": "Calculadora de horas", "tool": True,
+    "path": "/", "short": "Calculadora de horas", "tool": True, "group": "jor",
     "card": "Some e subtraia horas e minutos ou calcule o tempo entre dois horários.",
     "title": "Calculadora de Horas Online – Somar e Subtrair Horas",
     "desc": "Calculadora de horas grátis: some e subtraia horas e minutos, calcule o tempo entre dois horários (inclusive após a meia-noite) e veja o resultado em horas e em decimal.",
@@ -72,7 +72,7 @@ rows = "".join(
     + f'<td class="num" data-l="Total do dia" id="r{i}">–</td></tr>' for i, d in enumerate(DAYS))
 
 TRAB = {
-    "path": "/horas-trabalhadas/", "short": "Horas trabalhadas", "tool": True,
+    "path": "/horas-trabalhadas/", "short": "Horas trabalhadas", "tool": True, "group": "jor",
     "card": "Cartão de ponto da semana com intervalo: total, horas extras e saldo.",
     "title": "Calculadora de Horas Trabalhadas com Intervalo",
     "desc": "Calcule as horas trabalhadas da semana pelo cartão de ponto: entrada, intervalo e saída de segunda a sábado. Veja o total, a diferença para 44h e as horas extras.",
@@ -121,7 +121,7 @@ document.getElementById('reset').onclick=function(){document.querySelectorAll('t
 
 # ============================================================ Hora extra
 HE = {
-    "path": "/hora-extra/", "short": "Hora extra", "tool": True,
+    "path": "/hora-extra/", "short": "Hora extra", "tool": True, "group": "sal",
     "card": "Valor da hora extra com adicional de 50% e 100%, divisor da CLT e DSR.",
     "title": "Calculadora de Hora Extra 2026 – 50% e 100% (CLT)",
     "desc": "Calculadora de hora extra grátis: informe salário, jornada e horas extras para ver o valor da hora normal, da hora extra 50% e 100% e o reflexo no DSR, conforme a CLT.",
@@ -159,7 +159,7 @@ HE = {
 <li><strong>DSR:</strong> horas extras habituais refletem no descanso semanal remunerado (Lei 605/1949; Súmula 172 do TST). Para calcular só essa parte, use a <a href="/dsr-hora-extra/">calculadora de DSR</a>.</li>
 <li><strong>Hora extra noturna:</strong> entre 22h e 5h, some também o <a href="/adicional-noturno/">adicional noturno</a> de 20%.</li>
 </ul>
-<div class="note">Não sabe quantas horas extras fez? Some o cartão de ponto na <a href="/horas-trabalhadas/">calculadora de horas trabalhadas</a>. Se a empresa usa compensação, confira o <a href="/banco-de-horas/">banco de horas</a>.</div>
+<div class="note">Não sabe quantas horas extras fez? Some o cartão de ponto na <a href="/horas-trabalhadas/">calculadora de horas trabalhadas</a>. Se a empresa usa compensação, confira o <a href="/banco-de-horas/">banco de horas</a>. Trabalha em plantões? Veja a <a href="/escala-12x36/">escala 12x36</a>.</div>
 """,
     "faq": [
         ("Como calcular o valor da hora extra?", "Divida o salário pelo divisor da jornada (220 para 44 horas semanais) para achar o valor da hora. Multiplique por 1,5 para a hora extra a 50% ou por 2 para a de 100%."),
@@ -181,7 +181,7 @@ document.getElementById('tot').textContent=brl(the+dsr)}
 
 # ============================================================ Adicional noturno
 NOT = {
-    "path": "/adicional-noturno/", "short": "Adicional noturno", "tool": True,
+    "path": "/adicional-noturno/", "short": "Adicional noturno", "tool": True, "group": "sal",
     "card": "Horas noturnas (22h–5h), hora reduzida de 52min30s e valor do adicional de 20%.",
     "title": "Calculadora de Adicional Noturno – 20% e Hora Reduzida",
     "desc": "Calcule o adicional noturno: informe o horário de trabalho e o salário para ver as horas noturnas entre 22h e 5h, a hora reduzida de 52min30s e o valor do adicional de 20% (CLT).",
@@ -231,7 +231,7 @@ document.getElementById('vh').textContent=brl(vh);document.getElementById('ad').
 
 # ============================================================ DSR
 DSR = {
-    "path": "/dsr-hora-extra/", "short": "DSR sobre hora extra", "tool": True,
+    "path": "/dsr-hora-extra/", "short": "DSR sobre hora extra", "tool": True, "group": "sal",
     "card": "Reflexo das horas extras no descanso semanal remunerado, com dias do mês automáticos.",
     "title": "Calculadora de DSR sobre Hora Extra – Fórmula e Exemplo",
     "desc": "Calcule o DSR sobre horas extras: escolha o mês para contar dias úteis, domingos e feriados automaticamente e veja o valor do reflexo no descanso semanal remunerado.",
@@ -280,7 +280,7 @@ def _lista_feriados(y):
 
 T26, TOT26 = _tabela_uteis(2026)
 UTEIS = {
-    "path": "/dias-uteis/", "short": "Dias úteis", "tool": True,
+    "path": "/dias-uteis/", "short": "Dias úteis", "tool": True, "group": "cal",
     "card": "Conte dias úteis entre duas datas com os feriados nacionais de qualquer ano.",
     "title": "Calculadora de Dias Úteis 2026 – com Feriados Nacionais",
     "desc": "Conte os dias úteis entre duas datas descontando sábados, domingos e feriados nacionais. Veja quantos dias úteis tem cada mês de 2026 e a lista oficial de feriados.",
@@ -300,6 +300,7 @@ UTEIS = {
 <div class="tw"><table class="t"><thead><tr><th>Mês</th><th style="text-align:right">Seg. a sex.</th><th style="text-align:right">Seg. a sáb.</th></tr></thead><tbody>{T26}</tbody></table></div>
 <p class="hint">Considera os feriados nacionais. Carnaval (16 e 17/2) e Corpus Christi (4/6) contam como dias úteis por serem pontos facultativos.</p>
 <h2>Feriados nacionais de 2026</h2>
+<p>Veja todos os detalhes e feriadões em <a href="/feriados-2026/">feriados 2026</a>, o <a href="/calendario-2026/">calendário 2026</a> e o prazo do salário no <a href="/quinto-dia-util/">quinto dia útil</a>.</p>
 <ul>{_lista_feriados(2026)}</ul>
 <p>Pontos facultativos: Carnaval em 16 e 17 de fevereiro, Quarta-feira de Cinzas até as 14h (18/2) e Corpus Christi em 4 de junho (Portaria MGI nº 11.460/2025). O Dia Nacional de Zumbi e da Consciência Negra (20/11) é feriado nacional desde 2024 (Lei 14.759/2023).</p>
 <h2>Como contar dias úteis</h2>
@@ -326,7 +327,7 @@ document.getElementById('dc').textContent=tot;document.getElementById('fs').text
 
 # ============================================================ Calculadora de datas
 DATAS = {
-    "path": "/calculadora-de-datas/", "short": "Calculadora de datas", "tool": True,
+    "path": "/calculadora-de-datas/", "short": "Calculadora de datas", "tool": True, "group": "cal",
     "card": "Diferença entre datas em anos, meses e dias; somar e subtrair dias corridos.",
     "title": "Calculadora de Datas – Dias Entre Datas e Somar Dias",
     "desc": "Calculadora de datas online: descubra quantos dias, semanas, meses e anos há entre duas datas e some ou subtraia dias, meses ou anos de uma data. Grátis e sem cadastro.",
@@ -370,7 +371,7 @@ function c2(){var a=document.getElementById('d3').value;if(!a)return;var A=new D
 
 # ============================================================ Quantos dias faltam
 FALTAM = {
-    "path": "/quantos-dias-faltam/", "short": "Quantos dias faltam", "tool": True,
+    "path": "/quantos-dias-faltam/", "short": "Quantos dias faltam", "tool": True, "group": "cal",
     "card": "Contagem regressiva em dias corridos e úteis até qualquer data ou feriado.",
     "title": "Quantos Dias Faltam? Contagem Regressiva para Qualquer Data",
     "desc": "Descubra quantos dias faltam para o Natal, o Ano Novo, o próximo feriado ou qualquer data: contagem regressiva em dias corridos, dias úteis e semanas.",
@@ -410,7 +411,7 @@ var L=[['natal','Natal'],['ano','Ano Novo'],['feriado','próximo feriado'],['car
 
 # ============================================================ Banco de horas
 BANCO = {
-    "path": "/banco-de-horas/", "short": "Banco de horas", "tool": True,
+    "path": "/banco-de-horas/", "short": "Banco de horas", "tool": True, "group": "jor",
     "card": "Saldo do banco de horas com créditos e débitos, prazos da CLT e valor estimado.",
     "title": "Banco de Horas: Como Funciona e Calculadora de Saldo",
     "desc": "Entenda como funciona o banco de horas na CLT (prazos de 6 meses e 1 ano) e calcule o saldo somando horas extras e descontando folgas e atrasos.",
@@ -464,7 +465,7 @@ dec_rows = "".join(
     f'<tr><td>{m} min</td><td class="num">{str(round(m/60,2)).replace(".",",")}</td><td>{m+30} min</td><td class="num">{str(round((m+30)/60,2)).replace(".",",")}</td></tr>'
     for m in range(0, 30))
 DEC = {
-    "path": "/horas-em-decimal/", "short": "Horas em decimal", "tool": True,
+    "path": "/horas-em-decimal/", "short": "Horas em decimal", "tool": True, "group": "jor",
     "card": "Converta horas e minutos em decimal e vice-versa, com tabela completa.",
     "title": "Converter Horas em Decimal – Tabela e Calculadora",
     "desc": "Converta horas e minutos em horas decimais (7h45 = 7,75) e decimal em horas e minutos. Tabela de conversão de minutos para a folha de ponto e o cálculo de salário.",

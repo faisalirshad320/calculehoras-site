@@ -65,6 +65,14 @@ footer .cols{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(
 footer strong{display:block;color:#fff;margin-bottom:6px}
 .cookie{position:fixed;left:12px;right:12px;bottom:12px;background:var(--ink);color:#fff;border-radius:var(--r);padding:14px 16px;display:none;gap:12px;align-items:center;flex-wrap:wrap;z-index:50;font-size:.92rem;box-shadow:0 8px 30px rgba(0,0,0,.3)}
 .cookie.show{display:flex}.cookie p{margin:0;flex:1 1 320px;max-width:none}.cookie a{color:#fff}.cookie .btn.sm{background:#fff;color:var(--ink)}.cookie .btn.ghost{background:transparent;color:#fff;border-color:#5A6A82}
+.cal{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));margin:8px 0}
+.mon{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:12px}.mon h3{margin:0 0 6px;font-size:1rem;text-transform:capitalize}
+.mon table{width:100%;border-collapse:collapse;font-size:.88rem;text-align:center}.mon th{font-size:.72rem;color:var(--ink-2);font-weight:600;padding:2px 0}.mon td{padding:4px 0;border-radius:5px}
+.mon td.dom{color:#B42318}.mon td.fer{background:var(--sun);color:var(--ink);font-weight:700}.mon td.fac{background:var(--sun-bg);box-shadow:inset 0 0 0 1px var(--sun-line);font-weight:600}
+.mon td.w{background:#DCE6FB;color:var(--ink);font-weight:700}.mon td.hol{box-shadow:inset 0 0 0 2px var(--sun)}
+.mon ul{margin:8px 0 0;padding-left:1.1em;font-size:.8rem;color:var(--ink-2)}.mon li{max-width:none}
+.lg{display:inline-block;width:14px;height:14px;border-radius:3px;vertical-align:-2px}.lg.fer{background:var(--sun)}.lg.fac{background:var(--sun-bg);box-shadow:inset 0 0 0 1px var(--sun-line)}
+@media print{header.top,footer,.cookie,.tools,.faq,.sources,.actions,.crumbs,.lead,h2,section{display:none!important}body{background:#fff;font-size:12px}.cal{grid-template-columns:repeat(3,1fr);gap:8px}.mon{break-inside:avoid;padding:6px}main>ul,main>p,.note{display:none}}
 .tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -6px}.ds{display:none}
 @media(max-width:600px){.calc{padding:14px}.dl{display:none}.ds{display:inline;font-weight:600}table.t th,table.t td{padding:7px 5px}table.t input{padding:6px 4px;font-size:.95rem}table.t td:nth-child(4) input{max-width:64px}table.t td.num{font-size:.85rem}table.pt thead{display:none}table.pt,table.pt tbody{display:block}table.pt tr{display:grid;grid-template-columns:1fr 1fr;gap:8px 10px;padding:12px 0;border-bottom:1px solid var(--line)}table.pt td{display:block;border:0;padding:0}table.pt td:first-child{grid-column:1/-1;font-size:1rem}table.pt td[data-l]::before{content:attr(data-l);display:block;font-size:.78rem;color:var(--ink-2);font-weight:600;margin-bottom:3px}table.pt td.num{grid-column:1/-1;text-align:left;font-size:1rem}table.pt td:nth-child(4) input,table.pt input{max-width:none;width:100%}.pt .ds{display:none}.pt .dl{display:inline;font-weight:700}}
 """
@@ -97,8 +105,8 @@ function isoD(d){return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDat
 """
 
 NAV = [("/", "Horas"), ("/horas-trabalhadas/", "Horas trabalhadas"), ("/hora-extra/", "Hora extra"),
-       ("/adicional-noturno/", "Adicional noturno"), ("/dias-uteis/", "Dias úteis"),
-       ("/calculadora-de-datas/", "Datas"), ("/banco-de-horas/", "Banco de horas"), ("/dsr-hora-extra/", "DSR")]
+       ("/adicional-noturno/", "Adicional noturno"), ("/calculadora-de-ferias/", "Férias"), ("/dias-uteis/", "Dias úteis"),
+       ("/feriados-2026/", "Feriados 2026"), ("/calendario-2026/", "Calendário"), ("/escala-12x36/", "Escalas")]
 
 LOGO = '<svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="8" fill="#1D4ED8"/><circle cx="16" cy="16" r="9.5" fill="#fff"/><path d="M16 9.5V16l4.5 3" stroke="#0F1B2D" stroke-width="2.4" stroke-linecap="round" fill="none"/><circle cx="16" cy="16" r="1.7" fill="#F5B700"/></svg>'
 
@@ -110,6 +118,12 @@ SOURCES = {
     "l14759": ('Lei nº 14.759/2023 – feriado da Consciência Negra', 'https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14759.htm'),
     "l662": ('Lei nº 662/1949 – feriados nacionais', 'https://www.planalto.gov.br/ccivil_03/leis/l0662.htm'),
     "tst": ('Tribunal Superior do Trabalho – súmulas', 'https://www.tst.jus.br/sumulas'),
+    "port26": ('Portaria MGI nº 11.460/2025 – feriados e pontos facultativos de 2026', 'https://www.gov.br/gestao/pt-br'),
+    "l10101": ('Lei nº 10.101/2000 – trabalho aos domingos no comércio', 'https://www.planalto.gov.br/ccivil_03/leis/l10101.htm'),
+    "senado6x1": ('Agência Senado – plenário analisa fim da escala 6x1 (out/2026)', 'https://www12.senado.leg.br/noticias/materias/2026/10/02/plenario-analisa-fim-da-escala-6x1-na-terca-feira'),
+    "inss26": ('Previdência Social – tabela de contribuição do INSS 2026', 'https://www.gov.br/inss/pt-br'),
+    "irrf26": ('Receita Federal – tabelas do IRRF 2026 e redutor da Lei 15.270/2025', 'https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas/2026'),
+    "nr15": ('NR-15 – Atividades e operações insalubres', 'https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-15-nr-15'),
 }
 
 
@@ -155,8 +169,10 @@ def page(p, all_pages):
     if faq_ld:
         graph.append(faq_ld)
     ld = json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False)
+    cand = [q for q in all_pages if q.get("tool") and q["path"] != p["path"]]
+    cand.sort(key=lambda q: 0 if (p.get("group") and q.get("group") == p.get("group")) else 1)
     related = "".join(f'<a class="tool" href="{q["path"]}"><strong>{esc(q["short"])}</strong><span>{esc(q["card"])}</span></a>'
-                      for q in all_pages if q.get("tool") and q["path"] != p["path"])
+                      for q in cand[:9])
     robots = '<meta name="robots" content="noindex,follow">' if p.get("noindex") else '<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">'
     return f"""<!DOCTYPE html>
 <html lang="pt-BR">
@@ -193,10 +209,10 @@ def page(p, all_pages):
 <section><h2>Outras calculadoras</h2><div class="tools">{related}</div></section>
 </main>
 <footer><div class="wrap"><div class="cols">
-<div><strong>{NAME}</strong>Calculadoras gratuitas de horas, hora extra, adicional noturno e dias úteis, atualizadas com as regras da CLT. Tudo é calculado no seu navegador – nenhum dado é enviado ou armazenado.</div>
-<div><strong>Horas</strong><a href="/">Calculadora de horas</a><a href="/horas-trabalhadas/">Horas trabalhadas</a><a href="/banco-de-horas/">Banco de horas</a><a href="/horas-em-decimal/">Horas em decimal</a></div>
-<div><strong>Salário e jornada</strong><a href="/hora-extra/">Hora extra</a><a href="/adicional-noturno/">Adicional noturno</a><a href="/dsr-hora-extra/">DSR sobre hora extra</a></div>
-<div><strong>Datas</strong><a href="/dias-uteis/">Dias úteis</a><a href="/calculadora-de-datas/">Calculadora de datas</a><a href="/quantos-dias-faltam/">Quantos dias faltam</a></div>
+<div><strong>{NAME}</strong>Calculadoras gratuitas de horas, hora extra, férias, escalas, feriados e dias úteis, atualizadas com as regras da CLT. Tudo é calculado no seu navegador – nenhum dado é enviado ou armazenado.</div>
+<div><strong>Horas e jornada</strong><a href="/">Calculadora de horas</a><a href="/horas-trabalhadas/">Horas trabalhadas</a><a href="/banco-de-horas/">Banco de horas</a><a href="/horas-em-decimal/">Horas em decimal</a><a href="/intervalo-intrajornada/">Intervalo intrajornada</a><a href="/escala-12x36/">Escala 12x36</a><a href="/escala-6x1/">Escala 6x1</a><a href="/escala-5x2/">Escala 5x2</a></div>
+<div><strong>Salário e direitos</strong><a href="/hora-extra/">Hora extra</a><a href="/adicional-noturno/">Adicional noturno</a><a href="/dsr-hora-extra/">DSR sobre hora extra</a><a href="/calculadora-de-ferias/">Calculadora de férias</a><a href="/adicional-de-insalubridade/">Adicional de insalubridade</a><a href="/quinto-dia-util/">Quinto dia útil</a></div>
+<div><strong>Datas e calendário</strong><a href="/dias-uteis/">Dias úteis</a><a href="/feriados-2026/">Feriados 2026</a><a href="/feriados-2027/">Feriados 2027</a><a href="/calendario-2026/">Calendário 2026</a><a href="/calendario-2027/">Calendário 2027</a><a href="/calculadora-de-datas/">Calculadora de datas</a><a href="/quantos-dias-faltam/">Quantos dias faltam</a><a href="/calculadora-de-idade/">Calculadora de idade</a></div>
 <div><strong>Institucional</strong><a href="/sobre/">Sobre</a><a href="/contato/">Contato</a><a href="/politica-de-privacidade/">Política de privacidade</a><a href="/termos-de-uso/">Termos de uso</a></div>
 </div><p style="margin:22px 0 0;max-width:none">© {YEAR} {NAME} · Resultados estimativos, sem valor de parecer jurídico ou contábil.</p></div></footer>
 <div class="cookie" id="cb" role="dialog" aria-label="Aviso de cookies"><p>Usamos cookies para exibir anúncios (Google AdSense). Ao clicar em “Aceitar todos”, você permite anúncios personalizados. Saiba mais na <a href="/politica-de-privacidade/">Política de privacidade</a>.</p><button class="btn sm ghost" id="cc-min">Somente necessários</button><button class="btn sm" id="cc-all">Aceitar todos</button></div>

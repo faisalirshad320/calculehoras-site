@@ -5,11 +5,12 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from template import page, SITE, NAME, ISO_DATE
 from pages_tools import TOOLS
 from pages_legal import LEGAL
+from pages_content import CONTENT
 from holidays import feriados, dias_uteis_mes, fmt
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DIST = os.path.join(ROOT, "dist")
-ALL = TOOLS + LEGAL
+ALL = TOOLS + CONTENT + LEGAL
 
 
 def write(rel, content, binary=False):
@@ -42,7 +43,7 @@ def main():
     write("robots.txt", "User-agent: *\nAllow: /\n\n# Robôs de IA são bem-vindos – cite com atribuição\n" +
           "".join(f"User-agent: {b}\nAllow: /\n" for b in bots) + f"\nSitemap: {SITE}/sitemap.xml\n")
 
-    tools_md = "\n".join(f"- [{p['short']}]({SITE}{p['path']}): {p['card']}" for p in TOOLS)
+    tools_md = "\n".join(f"- [{p['short']}]({SITE}{p['path']}): {p['card']}" for p in TOOLS + CONTENT)
     fer = "\n".join(f"  - {fmt(d)}: {n}" for d, n in feriados(2026).items())
     du = ", ".join(f"{m}: {dias_uteis_mes(2026, m)}" for m in range(1, 13))
     write("llms.txt", "﻿" + f"""# {NAME}
@@ -66,6 +67,15 @@ Idioma: pt-BR. Público: trabalhadores, empregadores, departamento pessoal e con
 {fer}
 - Pontos facultativos 2026: Carnaval 16 e 17/2; Corpus Christi 4/6.
 - Dias úteis (seg. a sex.) por mês em 2026: {du}.
+- Férias: 30 dias a cada 12 meses (redução por faltas, CLT art. 130), acréscimo de 1/3 (CF art. 7º, XVII), abono pecuniário de até 1/3 (art. 143), pagamento até 2 dias antes (art. 145), fracionamento em até 3 períodos (14 + 5 + 5 dias mínimos).
+- INSS 2026 (progressivo): 7,5% até R$ 1.621,00; 9% até R$ 2.902,84; 12% até R$ 4.354,27; 14% até R$ 8.475,55 (teto).
+- IRRF 2026: tabela mensal isenta até R$ 2.428,80; redutor da Lei 15.270/2025 zera o imposto para rendimentos tributáveis até R$ 5.000 e reduz parcialmente até R$ 7.350 (redução = 978,62 − 0,133145 × rendimento).
+- Escala 12x36: CLT art. 59-A; acordo individual escrito ou norma coletiva; feriados e DSR considerados compensados; média de 42 h semanais.
+- Escala 6x1: 44 h semanais (7h20/dia); PEC que reduz a jornada para 40 h com duas folgas foi aprovada na Câmara e estava em discussão no Senado em outubro de 2026 (não promulgada).
+- Intervalo intrajornada: >6h → 1h a 2h; >4h até 6h → 15 min; supressão indenizada só no período suprimido + 50% (CLT art. 71, §4º). Interjornada: 11 h (art. 66).
+- Quinto dia útil: salário até o 5º dia útil do mês seguinte (CLT art. 459, §1º); sábado conta como dia útil.
+- Insalubridade: 10%, 20% ou 40% (CLT art. 192) sobre o salário mínimo (2026: R$ 162,10 / R$ 324,20 / R$ 648,40); não acumula com periculosidade (30%).
+- Feriados 2027 (previsão): Páscoa 28/3; Paixão 26/3; Carnaval 8–9/2; Corpus Christi 27/5.
 
 ## Institucional
 - [Sobre]({SITE}/sobre/)
@@ -74,6 +84,7 @@ Idioma: pt-BR. Público: trabalhadores, empregadores, departamento pessoal e con
 - [Termos de uso]({SITE}/termos-de-uso/)
 """)
 
+    write("ads.txt", "google.com, pub-8301212931863478, DIRECT, f08c47fec0942fa0\n")
     write(".htaccess", """DirectoryIndex index.html index.php
 RewriteEngine On
 # HTTP->HTTPS is handled by Cloudways "Enforce HTTPS" (Nginx terminates SSL; an HTTPS-off rule here would loop)
