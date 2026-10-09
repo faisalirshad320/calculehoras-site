@@ -15,6 +15,18 @@ Idioma: pt-BR. Público: trabalhadores, empregadores, departamento pessoal e con
 - [Quantos dias faltam](https://www.calculehoras.com/quantos-dias-faltam/): Contagem regressiva em dias corridos e úteis até qualquer data ou feriado.
 - [Banco de horas](https://www.calculehoras.com/banco-de-horas/): Saldo do banco de horas com créditos e débitos, prazos da CLT e valor estimado.
 - [Horas em decimal](https://www.calculehoras.com/horas-em-decimal/): Converta horas e minutos em decimal e vice-versa, com tabela completa.
+- [Feriados 2026](https://www.calculehoras.com/feriados-2026/): Lista oficial dos feriados nacionais e pontos facultativos de 2026, com feriadões.
+- [Feriados 2027](https://www.calculehoras.com/feriados-2027/): Previsão dos feriados nacionais de 2027 com dia da semana e feriadões.
+- [Calendário 2026](https://www.calculehoras.com/calendario-2026/): Calendário 2026 mês a mês com feriados nacionais e pontos facultativos.
+- [Calendário 2027](https://www.calculehoras.com/calendario-2027/): Calendário 2027 mês a mês com feriados nacionais e pontos facultativos.
+- [Escala 12x36](https://www.calculehoras.com/escala-12x36/): Gerador de escala 12x36 com dias de plantão, horas do mês e regras da CLT.
+- [Escala 6x1](https://www.calculehoras.com/escala-6x1/): Como funciona a escala 6x1, jornada diária e situação da PEC que acaba com ela.
+- [Escala 5x2](https://www.calculehoras.com/escala-5x2/): Escala 5x2: jornada de 8h ou 8h48, compensação do sábado e gerador mensal.
+- [Calculadora de férias](https://www.calculehoras.com/calculadora-de-ferias/): Férias com 1/3 constitucional, abono pecuniário, INSS e IRRF 2026 — valor líquido.
+- [Calculadora de idade](https://www.calculehoras.com/calculadora-de-idade/): Idade exata em anos, meses e dias, dias vividos e quanto falta para o aniversário.
+- [Intervalo intrajornada](https://www.calculehoras.com/intervalo-intrajornada/): Intervalo mínimo de almoço pela jornada, indenização do intervalo suprimido e interjornada de 11h.
+- [Quinto dia útil](https://www.calculehoras.com/quinto-dia-util/): Data do 5º dia útil de cada mês para pagamento do salário, com sábados contando.
+- [Adicional de insalubridade](https://www.calculehoras.com/adicional-de-insalubridade/): Insalubridade de 10%, 20% ou 40% do salário mínimo 2026 e comparação com periculosidade.
 
 ## Regras e valores de referência (atualizado em outubro de 2026)
 - Jornada máxima: 8 horas diárias e 44 semanais (CF, art. 7º, XIII). Divisor do salário-hora = jornada semanal × 5 (44h → 220; 40h → 200; 36h → 180).
@@ -37,6 +49,15 @@ Idioma: pt-BR. Público: trabalhadores, empregadores, departamento pessoal e con
   - 25/12/2026 (sexta-feira): Natal
 - Pontos facultativos 2026: Carnaval 16 e 17/2; Corpus Christi 4/6.
 - Dias úteis (seg. a sex.) por mês em 2026: 1: 21, 2: 20, 3: 22, 4: 20, 5: 20, 6: 22, 7: 23, 8: 21, 9: 21, 10: 21, 11: 19, 12: 22.
+- Férias: 30 dias a cada 12 meses (redução por faltas, CLT art. 130), acréscimo de 1/3 (CF art. 7º, XVII), abono pecuniário de até 1/3 (art. 143), pagamento até 2 dias antes (art. 145), fracionamento em até 3 períodos (14 + 5 + 5 dias mínimos).
+- INSS 2026 (progressivo): 7,5% até R$ 1.621,00; 9% até R$ 2.902,84; 12% até R$ 4.354,27; 14% até R$ 8.475,55 (teto).
+- IRRF 2026: tabela mensal isenta até R$ 2.428,80; redutor da Lei 15.270/2025 zera o imposto para rendimentos tributáveis até R$ 5.000 e reduz parcialmente até R$ 7.350 (redução = 978,62 − 0,133145 × rendimento).
+- Escala 12x36: CLT art. 59-A; acordo individual escrito ou norma coletiva; feriados e DSR considerados compensados; média de 42 h semanais.
+- Escala 6x1: 44 h semanais (7h20/dia); PEC que reduz a jornada para 40 h com duas folgas foi aprovada na Câmara e estava em discussão no Senado em outubro de 2026 (não promulgada).
+- Intervalo intrajornada: >6h → 1h a 2h; >4h até 6h → 15 min; supressão indenizada só no período suprimido + 50% (CLT art. 71, §4º). Interjornada: 11 h (art. 66).
+- Quinto dia útil: salário até o 5º dia útil do mês seguinte (CLT art. 459, §1º); sábado conta como dia útil.
+- Insalubridade: 10%, 20% ou 40% (CLT art. 192) sobre o salário mínimo (2026: R$ 162,10 / R$ 324,20 / R$ 648,40); não acumula com periculosidade (30%).
+- Feriados 2027 (previsão): Páscoa 28/3; Paixão 26/3; Carnaval 8–9/2; Corpus Christi 27/5.
 
 ## Institucional
 - [Sobre](https://www.calculehoras.com/sobre/)
