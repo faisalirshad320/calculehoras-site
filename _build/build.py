@@ -84,6 +84,8 @@ Idioma: pt-BR. Público: trabalhadores, empregadores, departamento pessoal e con
 - [Termos de uso]({SITE}/termos-de-uso/)
 """)
 
+    INDEXNOW = "8eeef374104f8c6c69565f28ee870821"
+    write(f"{INDEXNOW}.txt", INDEXNOW)
     write("ads.txt", "google.com, pub-8301212931863478, DIRECT, f08c47fec0942fa0\n")
     write(".htaccess", """DirectoryIndex index.html index.php
 RewriteEngine On
